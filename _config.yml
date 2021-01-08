@@ -14,7 +14,7 @@ menus:
   tags: /tags
   categories: /categories
   about: /about
-  friends: /links
+  # friends: /links
   # artitalk: /shuoshuo # You can uncomment to add this route
 
 about:
