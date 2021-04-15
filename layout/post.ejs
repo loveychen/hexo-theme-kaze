@@ -7,12 +7,16 @@
   >
 </div>
 <% } %>
+
+
 <article class="card card-content">
   <header>
     <h1 class="post-title">
       <%- page.title %>
     </h1>
   </header>
+  
+  
   <div class="post-meta post-show-meta">
     <time datetime="<%= date_xml(page.date) _%>">
       <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
@@ -29,6 +33,8 @@
     <span><%= wordcount(page.content) %> <%= __('words_count.title') %></span>
     <% } %>
   </div>
+
+
   <% if(page.tags && page.tags.data.length) { %>
   <div class="post-meta post-show-meta" style="margin-top: -10px;">
     <div style="display: flex; align-items: center;">
@@ -43,9 +49,13 @@
   </div>
   <% } %>
   </header>
+
+
   <div id="section" class="post-content">
     <%- page.content %>
   </div>
+
+  
   <div>
   <% if(theme.copyright.enable) { %>
   <div class="post-note note-<%= theme.copyright.style || "warning" %> copyright" style="margin-top: 42px">
@@ -56,17 +66,23 @@
   <% } %>
   </div>
 </article>
+
+
 <%- partial('_partial/pagination',{ 
   prev_label: __("prev_post.title"), next_label:__("next_post.title"),
   prev_link: page.prev ? page.prev.path : '', next_link: page.next ? page.next.path : '',
   prev_title: page.prev ? page.prev.title : '', next_title: page.next ? page.next.title : ''
  })%>
+
+
 <% if(theme.comment.enable && page.comment !== false) { %>
 <div class="card card-content comment-card" style="margin-top: 16px;">
   <div class="comment-card-title">评论</div>
   <%- partial('_partial/plugins/comments/' + theme.comment.type) %>
 </div>
 <% } %>
+
+
 <div class="card card-content toc-card" id="mobiletoc">
   <%- partial('_partial/toc-card') %>
 </div>
