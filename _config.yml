@@ -64,7 +64,7 @@ copyright:
   style: warning # the style uses note warning | danger | primary | info | success
 
 search:
-  enable: true
+  enable: false
   path: search.json
   field: posts
   searchContent: true
@@ -124,6 +124,7 @@ comment:
   enable: true
   type: valine # valine | gitalk | livere | disqus | we recommend valine
   # gitalk config details can see in https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+  # waline config details can see in https://waline.js.org
   valine:
     appId: LC7p0faybQsaBhYb4lg1yjQd-MdYXbMMI
     appKey: uu6JdEPv1lLNFqIMvsG0EKOs
@@ -155,6 +156,19 @@ comment:
     perPage: 10
   livere:
     uid:
+  waline:
+    serverURL:
+    path: window.location.pathname
+    avatar: mp
+    meta: ["nick", "mail", "link"]
+    requiredMeta: []
+    lang: zh-CN
+    dark: html[data-user-color-scheme="dark"]
+    login: enable
+    wordLimit: 0
+    pageSize: 10
+    locale:
+      placeholder: Just go go
 
 #------------------------
 # latex config
@@ -187,7 +201,8 @@ lightbox:
 # we support eight highlight themes, you can go to prism website (https://prismjs.com) for more information
 # theme: default | coy | dark | funky | okaidia | solarizedlight | tomorrow | twilight
 prism:
-  theme: twilight
+  theme: default
+  darkTheme: twilight
 
 # show the number of words in posts
 wordcount:
@@ -226,12 +241,12 @@ minify:
 color:
   text-color: "#3c4858"
   text-strong-color: "#2f3d4e"
-  text-light-color: "#909faf"
+  text-light-color: "#60656a"
   divider-color: "#e6e8ee"
   title-color: "#475b6d"
   link-color: "#3273dc"
   link-hover-color: "#6596e5"
-  info-text-color: "#909faf"
+  info-text-color: "#60656a"
   widget-background-color: "#fff"
   body-background-color: "#f2f5f8"
   border-color: "#e1e4e9"
@@ -254,8 +269,12 @@ cdn:
     js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   valine: //unpkg.com/valine/dist/Valine.min.js
   livere: //cdn-city.livere.com/js/embed.dist.js
+  waline: 
+    js: //unpkg.com/@waline/client@v2/dist/waline.js
+    css: //unpkg.com/@waline/client@v2/dist/waline.css
   baguetteBox: /js/lib/lightbox
   lozad: /js/lib/lozad.min.js
   prism: /js/lib/prism/
   busuanzi: /js/lib/busuanzi.min.js
   artitalk: https://cdn.jsdelivr.net/npm/artitalk
+  md5: /js/lib/md5.min.js

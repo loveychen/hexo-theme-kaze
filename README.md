@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://avatars3.githubusercontent.com/u/68339006?s=200&v=4" width="132">
+  <img src="https://img.songhn.com/img/feature-kaze-show-v2.webp" width="800">
 </p>
-<p align="center">hexo-theme-Kaze</p>
+<p align="center"><b>Hexo Theme Kaze</b></p>
 <p align="center">A simple, responsive Hexo theme</p>
 <p align="center">English | <a href="README_zh.md">中文</a></p>
 <p align="center">
@@ -22,7 +22,9 @@
 ---
 ## Preview
 
-![preview](https://img.songhn.com/img/gallery.png?imageslim)
+<p align="center">
+  <img src="https://img.songhn.com/img/kaze-new-preview.webp">
+</p>
 
 ## Introduction
 
@@ -84,14 +86,7 @@ Or download compression package and unzip under `your site/themes`, rename `hexo
 
 If you have any `bug` or suggestion, please send us `issue`!
 
-```markdown
-## Hexo version and the problems you encountered
-TODO
-## Reproduction method
-TODO
-## other problems
-TODO
-```
+You can see issue template details when creating new issues.
 
 ## Contributors
 
